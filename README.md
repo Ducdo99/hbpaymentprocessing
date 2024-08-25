@@ -22,7 +22,7 @@ Hướng dẫn cấu hình.</br>
    "docker compose up -d" <br/>
    ![img_4.png](img_4.png) <br/>
 4. Remote vào container của SQL Server 2019 để tạo database cho website <br/>
-   _ Mở cmd, và gõ "ipconfig /all"
+   _ Mở cmd, và gõ "ipconfig /all" <br/>
    _ Tìm đến dòng "IPv4 Address" bên trong mục "Ethernet adapter vEthernet (WSL):" <br/>
    _ Mở Microsoft SQL Server Management Studio <br/>
    _ nhập địa chỉ IP vừa tìm được cùng với port của database trong file "compose.yaml" vào ô "Server name" theo format "
@@ -41,7 +41,8 @@ Hướng dẫn cấu hình.</br>
    _ "127.0.0.1:8081/user/invoice-payment/" và đặt các giá trị nào vào mục "Params" -> "Query Params" </br>
    _ "invoiceCode": "ABHG15662", "total": "2900000", "description": "Duc chuyen tien lan 1", "tagName": "Bills", "
    senderAccountNumberCode": "INVABC123457", "receiverAccountNumberCode":"INVABC123433" <br/>
-   _ "senderAccountNumberCode" và "tagName" được giả lập trong database 
+   _ "senderAccountNumberCode" và "tagName" được giả lập trong database <br/> 
+   ![img_8.png](img_8.png)
     
     
     

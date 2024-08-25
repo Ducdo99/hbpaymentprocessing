@@ -135,6 +135,24 @@ go
 
 /**/
 
+insert account_number_code_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:01.000' AS DateTime), CAST(N'2023-02-28T00:00:01.000' AS DateTime), CAST(N'2023-02-28T00:00:01.000' AS DateTime), N'Active')
+ insert account_number_code_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:02.000' AS DateTime), CAST(N'2023-02-28T00:00:02.000' AS DateTime), CAST(N'2023-02-28T00:00:02.000' AS DateTime), N'Inactive')
+
+
+ insert account_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), N'Active')
+ insert account_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:01.000' AS DateTime), CAST(N'2023-02-27T00:00:01.000' AS DateTime), CAST(N'2023-02-27T00:00:01.000' AS DateTime), N'Inactive')
+
+ insert role (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-25T00:00:00.000' AS DateTime), CAST(N'2023-01-25T00:00:00.000' AS DateTime), CAST(N'2023-01-25T00:00:00.000' AS DateTime), N'Personal')
+ insert role (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), N'Enterprise')
+
+ insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), N'Shopping')
+ insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Entertainment')
+ insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), N'Hotel')
+ insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:00.000' AS DateTime), CAST(N'2023-02-28T00:00:00.000' AS DateTime), CAST(N'2023-02-28T00:00:00.000' AS DateTime), N'Bills')
+
+ insert account_transactionn_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Paid')
+ insert account_transactionn_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Unpaid')
+
  insert account (address, created_date, deleted_date, email, full_name, id_card, modified_date, phone_number, pwd, account_status_id, role_id) values (N'', CAST(N'2024-08-25T07:24:33.087' AS DateTime), CAST(N'2024-08-25T07:24:33.087' AS DateTime), N'ducminh1@gmail.com', N'Minh Đức', N'123655478985', CAST(N'2024-08-25T07:24:33.087' AS DateTime), N'', N'$2a$10$zzbi7D2WwWIu.WeLyi6XyuVHjB9A9wCEJ71kOfcwr0aMMTkBsId06', 1, 1)
  insert account (address, created_date, deleted_date, email, full_name, id_card, modified_date, phone_number, pwd, account_status_id, role_id) values (N'', CAST(N'2024-08-25T07:27:52.660' AS DateTime), CAST(N'2024-08-25T07:27:52.660' AS DateTime), N'ducminh@gmail.com', N'Minh Đức', N'123655478985', CAST(N'2024-08-25T07:27:52.660' AS DateTime), N'', N'$2a$10$Mj.1AdariAXn0s7O1PWEu.zDDcYX96TO6TukeCThM/Hk/L4/PFcEO', 1, 1)
  insert account (address, created_date, deleted_date, email, full_name, id_card, modified_date, phone_number, pwd, account_status_id, role_id) values (N'', CAST(N'2024-08-25T09:42:17.587' AS DateTime), CAST(N'2024-08-25T09:42:17.587' AS DateTime), N'ducminh2@gmail.com', N'Minh Đức', N'123655478985', CAST(N'2024-08-25T09:42:17.587' AS DateTime), N'', N'$2a$10$h27tZxgpJAkSu69SpOOQSeWbVSZ.Iy.dw69.toth57KwjkVxHDS.K', 1, 1)
@@ -144,28 +162,3 @@ go
  insert account_number_code (created_date, deleted_date, modified_date, number_code, account_id, account_number_code_status_id) values (CAST(N'2024-08-25T07:24:34.087' AS DateTime), CAST(N'2024-08-25T07:24:34.087' AS DateTime), CAST(N'2024-08-25T07:24:34.087' AS DateTime), N'INVABC123458', 1, 1)
  insert account_number_code (created_date, deleted_date, modified_date, number_code, account_id, account_number_code_status_id) values (CAST(N'2024-08-25T07:24:35.087' AS DateTime), CAST(N'2024-08-25T07:24:35.087' AS DateTime), CAST(N'2024-08-25T07:24:35.087' AS DateTime), N'INVABC123459', 2, 1)
  insert account_number_code (created_date, deleted_date, modified_date, number_code, account_id, account_number_code_status_id) values (CAST(N'2024-08-25T07:24:36.087' AS DateTime), CAST(N'2024-08-25T07:24:35.087' AS DateTime), CAST(N'2024-08-25T07:24:35.087' AS DateTime), N'INVABC123460', 2, 1)
-
-
- insert account_number_code_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:01.000' AS DateTime), CAST(N'2023-02-28T00:00:01.000' AS DateTime), CAST(N'2023-02-28T00:00:01.000' AS DateTime), N'Active')
- insert account_number_code_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:02.000' AS DateTime), CAST(N'2023-02-28T00:00:02.000' AS DateTime), CAST(N'2023-02-28T00:00:02.000' AS DateTime), N'Inactive')
-
-
- insert account_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), N'Active')
- insert account_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:01.000' AS DateTime), CAST(N'2023-02-27T00:00:01.000' AS DateTime), CAST(N'2023-02-27T00:00:01.000' AS DateTime), N'Inactive')
-
-
- insert account_transactionn_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Paid')
- insert account_transactionn_status (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Unpaid')
-
-
- insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), N'Shopping')
- insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), CAST(N'2023-02-26T00:00:00.000' AS DateTime), N'Entertainment')
- insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), CAST(N'2023-02-27T00:00:00.000' AS DateTime), N'Hotel')
- insert account_transactionn_tag (created_date, deleted_date, modified_date, name) values (CAST(N'2023-02-28T00:00:00.000' AS DateTime), CAST(N'2023-02-28T00:00:00.000' AS DateTime), CAST(N'2023-02-28T00:00:00.000' AS DateTime), N'Bills')
-
-
- insert role (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-25T00:00:00.000' AS DateTime), CAST(N'2023-01-25T00:00:00.000' AS DateTime), CAST(N'2023-01-25T00:00:00.000' AS DateTime), N'Personal')
- insert role (created_date, deleted_date, modified_date, name) values (CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), CAST(N'2023-01-26T00:00:00.000' AS DateTime), N'Enterprise')
-
-
- //        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.RFC_1123_DATE_TIME;
