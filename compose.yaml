@@ -1,0 +1,16 @@
+services:
+  mssql:
+    container_name: mssql-2019-container
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "HBPaymentProcess123!"
+    hostname: host.docker.internal
+    ports:
+      - 1400:1433
+  app:
+    container_name: hb-payment-processing-container
+    image: hb-payment-processing-image
+    ports:
+      - 127.0.0.1:8081:8081
+    working_dir: /app
